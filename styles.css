@@ -78,6 +78,22 @@ ol {
 
 /* || Main Styles */
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cream);
+}
+
+main {
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
