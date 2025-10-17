@@ -121,13 +121,25 @@ p {
 }
 
 .content {
-    padding: 2rem;
+    padding: 1.8rem;
 }
 
 .content__tag {
     font-weight: 100;
+    font-size: 1.25ch;
     text-transform: uppercase;
-    letter-spacing: 1ch;
+    letter-spacing: 0.9ch;
+    margin-block-end: 1rem;
+}
+
+.content__title {
+    font-size: 3.2ch;
+    margin-block-end: 1.3rem;
+}
+
+.content__description {
+    font-size: 1.7ch;
+    line-height: 2.3ch;
 }
 
 .attribution {
