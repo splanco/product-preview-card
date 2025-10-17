@@ -112,7 +112,22 @@ p {
     background-color: var(--white);
     width: 90vw;
     height: fit-content;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
+}
+
+.card__image {
+    border-start-start-radius: inherit;
+    border-start-end-radius: inherit;
+}
+
+.content {
+    padding: 2rem;
+}
+
+.content__tag {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1ch;
 }
 
 .attribution {
