@@ -142,7 +142,7 @@ p {
     line-height: 2.3ch;
 }
 
-.content__price {
+.content__discount-price {
     display: flex;
     align-items: center;
     font-family: 'Fraunces', serif;
@@ -152,12 +152,22 @@ p {
     margin-block-end: 1rem;
 }
 
-.content__price--strike {
+.content__original-price {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.6ch;
     font-weight: 500;
     color: var(--grey);
     margin-inline-start: 0.6rem;
+}
+
+.content__button {
+    width: 100%;
+    color: var(--white);
+    background-color: var(--green-500);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 0.6rem;
 }
 
 .attribution {
