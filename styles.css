@@ -161,13 +161,25 @@ p {
 }
 
 .content__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 2.6rem;
     color: var(--white);
     background-color: var(--green-500);
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.5ch;
     font-weight: 700;
-    padding: 1rem;
-    border-radius: 0.6rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.content__shopping-cart-image {
+    --icon-side-len: 0.8rem;
+    width: var(--icon-side-len);
+    height: var(--icon-side-len);
+    margin-inline-end: 0.5rem;
 }
 
 .attribution {
