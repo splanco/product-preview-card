@@ -109,6 +109,8 @@ p {
 /* || Class Styles */
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--white);
     width: 90vw;
     height: fit-content;
@@ -194,4 +196,17 @@ p {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* || Media Queries */
+
+@media only screen and (min-width: 600px) {
+    .card {
+        flex-direction: row;
+        max-width: 50vw;
+    }
+
+    .card__image {
+        width: 50%;
+    }
 }

@@ -18,13 +18,17 @@
     <body>
         <main>
             <article class="card">
-                <img
-                    class="card__image"
-                    alt="A square shaped glass bottle of an amber colored purfume"
-                    src="images/image-product-mobile.jpg"
-                    width="700"
-                    height="684"
-                />
+                <picture>
+                    <source media="(width > 600px)" srcset="images/image-product-desktop.jpg" />
+                    <source media="(width <= 600px)" srcset="images/image-product-mobile.jpg" />
+                    <img
+                        class="card__image"
+                        alt="A square shaped glass bottle of an amber colored purfume"
+                        src="images/image-product-mobile.jpg"
+                        width="700"
+                        height="684"
+                    />
+                </picture>
 
                 <section class="content">
                     <p class="content__tag">Perfume</p>
