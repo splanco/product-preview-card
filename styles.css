@@ -37,6 +37,9 @@
     --grey: hsl(228, 12%, 48%);
     --cream: hsl(30, 38%, 92%);
     --white: hsl(0, 0%, 100%);
+
+    --card-width: 90vw;
+    --card-border-radius: 0.4rem;
 }
 
 /* || Reset */
@@ -92,6 +95,7 @@ main {
     display: flex;
     flex: 1 0 auto;
     justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -112,15 +116,15 @@ p {
     display: flex;
     flex-direction: column;
     background-color: var(--white);
-    width: 90vw;
+    width: var(--card-width);
     height: fit-content;
-    border-radius: 0.4rem;
+    border-radius: var(--card-border-radius);
     margin: 1.5rem 0.5rem;
 }
 
 .card__image {
-    border-start-start-radius: inherit;
-    border-start-end-radius: inherit;
+    border-start-start-radius: var(--card-border-radius);
+    border-start-end-radius: var(--card-border-radius);
 }
 
 .content {
@@ -201,12 +205,25 @@ p {
 /* || Media Queries */
 
 @media only screen and (min-width: 600px) {
+    :root {
+        --card-width: 50vw;
+    }
+
     .card {
         flex-direction: row;
-        max-width: 50vw;
+        max-width: 525px;
     }
 
     .card__image {
-        width: 50%;
+        width: calc(var(--card-width) * 0.5);
+        height: 100%;
+        object-fit: cover;
+        border-start-start-radius: var(--card-border-radius);
+        border-start-end-radius: 0;
+        border-end-start-radius: var(--card-border-radius);
+    }
+
+    .content {
+        width: calc(var(--card-width) * 0.5);
     }
 }
