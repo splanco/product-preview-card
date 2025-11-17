@@ -211,6 +211,7 @@ p {
 
     .card {
         flex-direction: row;
+        max-width: 525px;
     }
 
     .card__image {
